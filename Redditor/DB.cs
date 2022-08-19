@@ -29,7 +29,7 @@ namespace Redditor
         public void Login()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Server=tcp:redditor.database.windows.net,1433;Initial Catalog=Redditor1;Persist Security Info=False;User ID=lookdadon;Password=Fresc@13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            con.ConnectionString = @"Server=tcp:redditor.database.windows.net,1433;Initial Catalog=Redditor1;Persist Security Info=False;User ID=xxx;Password=xxx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             con.Open();
 
             SqlCommand cmd = new SqlCommand("select username,password from logins where username='" + f2.txtUsername.Text + "'and Password='" + f2.txtPassword.Text + "'", con);
