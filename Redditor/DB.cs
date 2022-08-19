@@ -53,7 +53,7 @@ namespace Redditor
         public string[] Subreddit()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"Server=tcp:redditor.database.windows.net,1433;Initial Catalog=Redditor1;Persist Security Info=False;User ID=lookdadon;Password=Fresc@13;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            con.ConnectionString = @"Server=tcp:redditor.database.windows.net,1433;Initial Catalog=Redditor1;Persist Security Info=False;User ID=xxx;Password=xxx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             con.Open();
 
             SqlCommand cmd = new SqlCommand("select * from subreddit1", con);
