@@ -118,9 +118,9 @@ namespace Redditor
                 request.AddHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36");
                 request.AddParameter("csrf_token", csrfToken);
                 request.AddParameter("otp", "");
-                request.AddParameter("password", "Fresc@13");
+                request.AddParameter("password", "xxx");
                 request.AddParameter("dest", "https://www.reddit.com");
-                request.AddParameter("username", "lookdadon197");
+                request.AddParameter("username", "xxx");
 
                 response = client.Execute(request);
                
@@ -258,7 +258,7 @@ namespace Redditor
             request.AddHeader("x-reddit-loid", loid);
             request.AddHeader("x-reddit-session", redditSession);
             request.AddHeader("Cookie", cookies);
-            request.AddParameter("id", "t3_voz5r7");
+            request.AddParameter("id", "xxx");
             request.AddParameter("dir", "1");
             request.AddParameter("api_type", "json");
 
@@ -345,7 +345,7 @@ namespace Redditor
                 request.AddHeader("accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
                 request.AddHeader("accept-language", "en-US,en;q=0.9");
                 request.AddHeader("cookie", "csv=2; pc=ji; " + cookieJar[1] + cookieJar[2] + cookieJar[3] + cookieJar[4] + cookieJar[5] + cookieJar[6]);
-                request.AddHeader("referer", "https://old.reddit.com/user/lookdadon197/");
+                request.AddHeader("referer", "https://old.reddit.com/user/xxx/");
                 request.AddHeader("sec-ch-ua", "\"Chromium\";v=\"104\", \" Not A;Brand\";v=\"99\", \"Google Chrome\";v=\"104\"");
                 request.AddHeader("sec-ch-ua-mobile", "?0");
                 request.AddHeader("sec-ch-ua-platform", "\"Windows\"");
@@ -357,12 +357,12 @@ namespace Redditor
                 request.AddHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36");
                 response = client.Execute(request);
                 MessageBox.Show(response.IsSuccessful.ToString());
-                using (StreamWriter sw = File.CreateText(@"C:\Users\redrum\Desktop\request\contentInboxGet.txt"))
+                using (StreamWriter sw = File.CreateText(@"C:\Users\xxx\Desktop\request\contentInboxGet.txt"))
                 {
                     sw.Write(response.Content);
                 }
                 string _cookies = client.CookieContainer.GetCookieHeader(new Uri("https://old.reddit.com/"));
-                using (StreamWriter sw = File.CreateText(@"C:\Users\redrum\Desktop\request\inboxGetCookies.txt"))
+                using (StreamWriter sw = File.CreateText(@"C:\Users\xxx\Desktop\request\inboxGetCookies.txt"))
                 {
                     sw.Write(_cookies);
                 }
